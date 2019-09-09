@@ -1,6 +1,6 @@
 package com.challenge.unit;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.mocks.ListMocks;
 import com.challenge.services.IInputFileLineValidatorService;
 import com.challenge.services.impl.InputFileLineValidatorService;
@@ -18,7 +18,7 @@ public class InputFileLineValidatorServiceTest {
     public void validateLines_ok() {
         try {
             inputFileLineValidatorService.validateLines(ListMocks.GAME);
-            Assert.assertTrue("Shoud not throw an excpetion", true);
+            Assert.assertTrue("Shoud not throw an exception", true);
         } catch (ChallengeException e) {
             fail();
         }
@@ -45,7 +45,7 @@ public class InputFileLineValidatorServiceTest {
     public void isLessEqualsThanTen_ok() {
         try {
             inputFileLineValidatorService.isLessEqualsThanTen(10);
-            Assert.assertTrue("Shoud not throw an excpetion", true);
+            Assert.assertTrue("Shoud not throw an exception", true);
         } catch (ChallengeException e) {
             fail();
         }

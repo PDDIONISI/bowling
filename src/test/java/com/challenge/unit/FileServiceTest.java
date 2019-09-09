@@ -1,6 +1,6 @@
 package com.challenge.unit;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.services.IFileService;
 import com.challenge.services.impl.FileService;
 import org.junit.Assert;

@@ -1,6 +1,6 @@
 package com.challenge.unit;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.mocks.ListMocks;
 import com.challenge.model.Player;
 import com.challenge.services.IBoardService;
