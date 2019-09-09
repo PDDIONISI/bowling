@@ -1,6 +1,6 @@
 package com.challenge.services;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 
 import java.io.IOException;
 import java.util.List;

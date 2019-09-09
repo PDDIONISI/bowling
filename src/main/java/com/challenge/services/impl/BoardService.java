@@ -1,6 +1,6 @@
 package com.challenge.services.impl;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.model.Board;
 import com.challenge.model.Frame;
 import com.challenge.model.Player;
