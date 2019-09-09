@@ -9,6 +9,7 @@ import com.challenge.services.impl.BoardService;
 import com.challenge.services.impl.FileService;
 
 import java.io.*;
+import java.nio.file.NoSuchFileException;
 import java.util.List;
 
 public class Main {
@@ -18,7 +19,7 @@ public class Main {
     private static String result;
 
     public static void main(String[] arg) {
-        if(arg.length != 2){
+        if (arg.length != 2) {
             System.out.println("Invalid input parameters");
             System.exit(1);
         }
@@ -35,13 +36,16 @@ public class Main {
 
             boardService.printBoard(new Board(players));
             printConsoleResult(baos.toString());
+        } catch (NoSuchFileException e) {
+            System.out.println("File not found!");
+            printConsoleResult(baos.toString());
         } catch (IOException | ChallengeException e) {
             System.out.println(e.getMessage());
             printConsoleResult(baos.toString());
         }
     }
 
-    private static void printConsoleResult(String message){
+    private static void printConsoleResult(String message) {
         result = message;
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.print(result);
