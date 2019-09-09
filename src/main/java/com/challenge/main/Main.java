@@ -2,7 +2,7 @@ package com.challenge.main;
 
 import com.challenge.model.Board;
 import com.challenge.model.Player;
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.services.IBoardService;
 import com.challenge.services.IFileService;
 import com.challenge.services.impl.BoardService;

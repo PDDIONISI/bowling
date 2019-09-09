@@ -1,6 +1,6 @@
 package com.challenge.services.impl;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.services.IInputFileLineValidatorService;
 import com.challenge.validator.ValidatorUtil;
 import com.challenge.validator.ValidationError;

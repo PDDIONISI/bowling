@@ -1,6 +1,6 @@
 package com.challenge.validator;
 
-import com.challenge.excpetion.ChallengeException;
+import com.challenge.exception.ChallengeException;
 import com.challenge.utils.Constants;
 
 public enum ValidationError {

@@ -1,4 +1,4 @@
-package com.challenge.excpetion;
+package com.challenge.exception;
 
 public class ChallengeException extends Exception {
 
